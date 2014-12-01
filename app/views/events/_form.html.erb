@@ -1,0 +1,49 @@
+<%= form_for(@event) do |f| %>
+  <% if @event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
+
+      <ul>
+      <% @event.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :event_address_number %><br />
+    <%= f.text_field :event_address_number %>
+  </div>
+  <div class="field">
+    <%= f.label :event_street_name %><br />
+    <%= f.text_field :event_street_name %>
+  </div>
+  <div class="field">
+    <%= f.label :event_postcode %><br />
+    <%= f.text_field :event_postcode %>
+  </div>
+  <div class="field">
+    <%= f.label :event_contact_number %><br />
+    <%= f.text_field :event_contact_number %>
+  </div>
+  <div class="field">
+    <%= f.label :quantity_of_flowers %><br />
+    <%= f.number_field :quantity_of_flowers %>
+  </div>
+  <div class="field">
+    <%= f.label :flower_description %><br />
+    <%= f.text_area :flower_description %>
+  </div>
+  <div class="field">
+    <%= f.label :equipment_return %><br />
+    <%= f.text_area :equipment_return %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Event:</b>
+  <%= @bouquet.event_id %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @bouquet.price %>
+</p>
+
+<p>
+  <b>Number bouquets:</b>
+  <%= @bouquet.number_bouquets %>
+</p>
+
+
+<%= link_to 'Edit', edit_bouquet_path(@bouquet) %> |
+<%= link_to 'Back', bouquets_path %>

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @event.user_id %>
+</p>
+
+<p>
+  <b>Event address number:</b>
+  <%= @event.event_address_number %>
+</p>
+
+<p>
+  <b>Event street name:</b>
+  <%= @event.event_street_name %>
+</p>
+
+<p>
+  <b>Event postcode:</b>
+  <%= @event.event_postcode %>
+</p>
+
+<p>
+  <b>Event contact number:</b>
+  <%= @event.event_contact_number %>
+</p>
+
+<p>
+  <b>Quantity of flowers:</b>
+  <%= @event.quantity_of_flowers %>
+</p>
+
+<p>
+  <b>Flower description:</b>
+  <%= @event.flower_description %>
+</p>
+
+<p>
+  <b>Equipment return:</b>
+  <%= @event.equipment_return %>
+</p>
+
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>

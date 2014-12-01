@@ -1,0 +1,37 @@
+<h1>Listing events</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Event address number</th>
+    <th>Event street name</th>
+    <th>Event postcode</th>
+    <th>Event contact number</th>
+    <th>Quantity of flowers</th>
+    <th>Flower description</th>
+    <th>Equipment return</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @events.each do |event| %>
+  <tr>
+    <td><%= event.user_id %></td>
+    <td><%= event.event_address_number %></td>
+    <td><%= event.event_street_name %></td>
+    <td><%= event.event_postcode %></td>
+    <td><%= event.event_contact_number %></td>
+    <td><%= event.quantity_of_flowers %></td>
+    <td><%= event.flower_description %></td>
+    <td><%= event.equipment_return %></td>
+    <td><%= link_to 'Show', event %></td>
+    <td><%= link_to 'Edit', edit_event_path(event) %></td>
+    <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Event', new_event_path %>

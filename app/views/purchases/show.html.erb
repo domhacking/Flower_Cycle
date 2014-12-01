@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Purchase order number:</b>
+  <%= @purchase.purchase_order_number %>
+</p>
+
+<p>
+  <b>Bouquet:</b>
+  <%= @purchase.bouquet_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @purchase.user_id %>
+</p>
+
+<p>
+  <b>Delivery date:</b>
+  <%= @purchase.delivery_date %>
+</p>
+
+<p>
+  <b>Same as billing address:</b>
+  <%= @purchase.same_as_billing_address %>
+</p>
+
+<p>
+  <b>Delivery house number:</b>
+  <%= @purchase.delivery_house_number %>
+</p>
+
+<p>
+  <b>Delivery road name:</b>
+  <%= @purchase.delivery_road_name %>
+</p>
+
+<p>
+  <b>Delivery postcode:</b>
+  <%= @purchase.delivery_postcode %>
+</p>
+
+
+<%= link_to 'Edit', edit_purchase_path(@purchase) %> |
+<%= link_to 'Back', purchases_path %>
