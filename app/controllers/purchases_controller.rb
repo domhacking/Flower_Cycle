@@ -1,6 +1,7 @@
 class PurchasesController < ApplicationController
+  
   before_filter :set_purchase, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   respond_to :html
 
   def index
