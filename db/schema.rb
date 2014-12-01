@@ -11,7 +11,41 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141201141331) do
+ActiveRecord::Schema.define(:version => 20141201164049) do
+
+  create_table "bouquets", :force => true do |t|
+    t.integer  "event_id"
+    t.integer  "price"
+    t.integer  "number_bouquets"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  create_table "events", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "event_address_number"
+    t.string   "event_street_name"
+    t.string   "event_postcode"
+    t.string   "event_contact_number"
+    t.integer  "quantity_of_flowers"
+    t.text     "flower_description"
+    t.text     "equipment_return"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+  end
+
+  create_table "purchases", :force => true do |t|
+    t.integer  "purchase_order_number"
+    t.integer  "bouquet_id"
+    t.integer  "user_id"
+    t.date     "delivery_date"
+    t.boolean  "same_as_billing_address"
+    t.string   "delivery_house_number"
+    t.string   "delivery_road_name"
+    t.string   "delivery_postcode"
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
