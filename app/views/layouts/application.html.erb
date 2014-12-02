@@ -8,19 +8,40 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-  <p class="navbar-text pull-right">
-    <% if user_signed_in? %>
-      Logged in as <strong><%= current_user.email %></strong>.
-      <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-      <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-    <% else %>
-      <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-      <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-    <% end %>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <ul class="nav nav pills nav pull-right">
+          <li><%= link_to 'How it works'%></li>
+          <li><%= link_to 'Our Flowers'%></li>
+          <li><%= link_to 'Supplier Stores'%></li>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Sign In?<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu"> 
+            <li><% if user_signed_in? %>
+                Logged in as <strong><%= current_user.email %></strong>.
+                <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %>
+                <% else %>
+                  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'%>
+                <% end %>
+            </li>
+            <li>
+              <% if user_signed_in? %>
+                  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+                <% else %>
+                  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+                <% end %>
+            </li>
+          </ul>         
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+<div class="container">
   <%= yield %>
+</div>
+
 
 </body>
 </html>
