@@ -9,6 +9,6 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
   has_many :purchases
   has_many :events, as: :supplier
-  has_many :events, as: :customer
+  has_many :events, as: :customer, through: :purchases
 
 end
