@@ -21,6 +21,41 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
+  <div class="field">
+    <%= f.label :role %><br />
+    <%= f.text_field :role %>
+  </div>
+
+  <div class="field">
+    <%= f.label :company_name %><br />
+    <%= f.text_field :company_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :house_number %><br />
+    <%= f.text_field :house_number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :road_name %><br />
+    <%= f.text_field :road_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :postcode %><br />
+    <%= f.text_field :postcode %>
+  </div>
+
+  <div class="field">
+    <%= f.label :website %><br />
+    <%= f.text_field :website %>
+  </div>
+
+  <div class="field">
+    <%= f.label :contact_number %><br />
+    <%= f.text_field :contact_number %>
+  </div>
+    
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>

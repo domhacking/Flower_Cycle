@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141202143135) do
+ActiveRecord::Schema.define(:version => 20141204140334) do
 
   create_table "bouquet_purchases", :force => true do |t|
     t.integer  "quantity"
@@ -69,6 +69,12 @@ ActiveRecord::Schema.define(:version => 20141202143135) do
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "role"
+    t.string   "house_number"
+    t.string   "road_name"
+    t.string   "postcode"
+    t.string   "company_name"
+    t.string   "website"
+    t.string   "contact_number"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
