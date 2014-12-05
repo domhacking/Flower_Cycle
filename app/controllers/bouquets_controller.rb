@@ -1,6 +1,6 @@
 class BouquetsController < ApplicationController
 
-  before_filter :set_bouquet, only: [:show, :edit, :update, :destroy]
+  before_filter :set_bouquet, only: [:new, :edit, :update, :destroy]
   respond_to :html
 
   def index

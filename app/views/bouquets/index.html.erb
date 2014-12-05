@@ -4,17 +4,13 @@
   <tr>
     <th>Event</th>
     <th>Price</th>
-    <th>Number bouquets</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    
   </tr>
 
 <% @bouquets.each do |bouquet| %>
   <tr>
     <td><%= bouquet.event_id %></td>
     <td><%= bouquet.price %></td>
-    <td><%= bouquet.number_bouquets %></td>
     <td><%= link_to 'Show', bouquet %></td>
     <td><%= link_to 'Edit', edit_bouquet_path(bouquet) %></td>
     <td><%= link_to 'Destroy', bouquet, method: :delete, data: { confirm: 'Are you sure?' } %></td>

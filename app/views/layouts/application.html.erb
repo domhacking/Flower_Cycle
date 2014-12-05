@@ -15,7 +15,8 @@
           <li><%= link_to 'How it works'%></li>
           <li><%= link_to 'Our Flowers', bouquets_path %></li>
           <li><%= link_to 'Supplier Stores', users_path %></li>
-          <li role="presentation" class="dropdown">
+          <li><%= link_to 'List Your Flowers', new_event_path %></li>
+                    <li role="presentation" class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Sign In?<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu"> 
             <li><% if user_signed_in? %>
