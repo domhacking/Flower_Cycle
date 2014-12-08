@@ -14,11 +14,11 @@ railsBouquet.bouquetForm = function(){
     price: price,
     number_bouquets: numberBouquets
   }  
-
+  
   $.ajax({
     url: '/bouquets',
     method: 'POST',
-    data: bouquet,
+    data: {bouquet: bouquet},
     dataType: "json"
   }).success(function(data){
     console.log(data)
