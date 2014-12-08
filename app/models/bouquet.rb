@@ -1,5 +1,5 @@
 class Bouquet < ActiveRecord::Base
-  attr_accessible :event_id, :bouquet_stock, :price, :title, :description, :image_url, :purchase_id
+  attr_accessible :event_id, :bouquet_stock, :price, :bouquet_name, :bouquet_description, :bouquet_image, :purchase_id, :number_bouquets
 
 belongs_to :event
 belongs_to :purchase

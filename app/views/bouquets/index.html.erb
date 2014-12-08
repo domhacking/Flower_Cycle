@@ -1,23 +1,22 @@
 <h1>Listing bouquets</h1>
-
-<table>
-  <tr>
-    <th>Event</th>
-    <th>Price</th>
-    
-  </tr>
-
-<% @bouquets.each do |bouquet| %>
-  <tr>
-    <td><%= bouquet.event_id %></td>
-    <td><%= bouquet.price %></td>
-    <td><%= link_to 'Show', bouquet %></td>
-    <td><%= link_to 'Edit', edit_bouquet_path(bouquet) %></td>
-    <td><%= link_to 'Destroy', bouquet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+<% if current_user.present? %>
+  <% if current_user.role == "Admin" %>
+    <div class = "new_bouquet_form">
+      <p>Bouquet Name:</p>
+      <input type='text' id='bouquet_name'>
+      <p>Bouquet Description:</p>
+      <input type='text' id='bouquet_description'>
+      <p>Bouquet Price:</p>
+      <input type='text' id='price'>
+      <p>Number of Bouquets:</p>
+      <input type='text' id='number_bouquets'>
+      </br>
+      <input type='submit' value='submit' class='bouquet_submit'>
+    </div>
+  <% end %>
 <% end %>
-</table>
 
+<div id = "listbouquets"></div>
 <br />
 
 <%= link_to 'New Bouquet', new_bouquet_path %>
