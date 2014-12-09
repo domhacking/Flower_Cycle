@@ -1,4 +1,7 @@
 User.delete_all
+Bouquet.delete_all
+Event.delete_all
+Purchase.delete_all
 
 user1 = User.create!(name: "Olivia Gibbs", email: "og@gmail.com", role:"Supplier",  password: "password1", company_name: "MrsFlorist", house_number:"2" , road_name: "Fulham Road" , postcode: "SW6 1BW", contact_number: "020 8166 3169",  website: "www.mrsflorist.com")
 user2 = User.create!(name: "Stephanie Griffiths", email: "sg@gmail.com", role:"Supplier", password: "password1", house_number: "158",  road_name: "Long Ln" , postcode: "SE1 4BS", contact_number: "020 7407 1666" , website: "www.thelondonflowershop.co.uk" , company_name: "The London Flower Shop")
@@ -27,5 +30,22 @@ user24 = User.create!(name: "Jacob Cummings", email: "jc@gmail.com", role:"Custo
 user25 = User.create!(name: "Simon Orange", email: "sor@gmail.com",role:"Customer",  password: "password1", house_number: "44" , road_name:  "Victoria Road", postcode:  "W8 5RQ", contact_number:  "07500406744")
 user26 = User.create!(name: "Erik Jan", email: "ej@gmail.com", role:"Customer", password: "password1", house_number: "44" ,  road_name: "Victoria Road" , postcode: "W8 5RQ" , contact_number: "07500406744")
 user27 = User.create!(name: "Dominc Hacking", email: "dominichacking@gmail.com", role:"Customer", password: "password1", house_number: "44" ,  road_name: "Victoria Road" , postcode: "W8 5RQ" , contact_number: "07500406744")
+
+
+
+
+bouquet1 = Bouquet.create!(bouquet_name: "Winterary & Wild", bouquet_description:"This bouquet of flowers were plucked from a lovely winter themed wedding between a young and lovely couple called Alex & Amy", price: 20.00, number_bouquets:"30", bouquet_image: "amywedding.jpg")
+bouquet2 = Bouquet.create!(bouquet_name: "Homely Hydrangeas", bouquet_description:"Beautiful white Hydrangeas, in full bloom, to warm up your home on a cold day", price: 25.00, number_bouquets:"20", bouquet_image: "homelyhydrangeas.jpg")
+bouquet3 = Bouquet.create!(bouquet_name: "Romantic Roses", bouquet_description:"Let the smell of roses drift through your home with this georgo", price: 15.00, number_bouquets:"30", bouquet_image: "romanticroses.jpg")
+
+
+
+
+
+
+
+
+
+
 
 
