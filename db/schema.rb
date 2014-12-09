@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141205115120) do
+ActiveRecord::Schema.define(:version => 20141209133258) do
 
   create_table "bouquet_purchases", :force => true do |t|
     t.integer  "quantity"
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(:version => 20141205115120) do
     t.text     "equipment_return"
     t.datetime "created_at",           :null => false
     t.datetime "updated_at",           :null => false
+    t.string   "event_name"
   end
 
   create_table "purchases", :force => true do |t|

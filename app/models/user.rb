@@ -8,7 +8,6 @@ class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :role, :house_number, :road_name, :postcode, :company_name, :website, :contact_number
   # attr_accessible :title, :body
   has_many :purchases
-  has_many :events, as: :supplier
-  has_many :events, as: :customer, through: :purchases
-
+  has_many :events
+  
 end

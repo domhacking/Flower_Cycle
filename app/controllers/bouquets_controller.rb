@@ -23,9 +23,7 @@ class BouquetsController < ApplicationController
   def create
 
     @bouquet = Bouquet.new(params[:bouquet])
-    binding.pry
     @bouquet.save
-
     respond_with(@bouquet)
   end
 

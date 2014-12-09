@@ -1,37 +1,36 @@
 <h1>Listing events</h1>
+<% if current_user.present? %>
+    <% if current_user.role = "Admin" %>
+        <div class = "new_event_form">
+            <p>Event Name:</p>
+            <input type='text' id='event_name'>
 
-<table>
-  <tr>
-    <th>User</th>
-    <th>Event address number</th>
-    <th>Event street name</th>
-    <th>Event postcode</th>
-    <th>Event contact number</th>
-    <th>Quantity of flowers</th>
-    <th>Flower description</th>
-    <th>Equipment return</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+            <p>Event Address Building Number:</p>
+            <input type='text' id='event_address_number'>
+        
+            <p>Event Street Name:</p>
+            <input type='text' id='event_street_name'>
+        
+            <p>Event Postcode:</p>
+            <input type='text' id='event_postcode'>
 
-<% @events.each do |event| %>
-  <tr>
-    <td><%= event.user_id %></td>
-    <td><%= event.event_address_number %></td>
-    <td><%= event.event_street_name %></td>
-    <td><%= event.event_postcode %></td>
-    <td><%= event.event_contact_number %></td>
-    <td><%= event.quantity_of_flowers %></td>
-    <td><%= event.flower_description %></td>
-    <td><%= event.equipment_return %></td>
-    <td><%= link_to 'Show', event %></td>
-    <td><%= link_to 'Edit', edit_event_path(event) %></td>
-    <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+            <p>Flower description</p>
+            <input type='text' id='flower_description'>
+        
+            <p>Quantity of Flowers:</p>
+            <input type='text' id='quantity_of_flowers'>
+
+            <p>Equipment needing to be returned:</p>
+            <input type='text' id='equipment_return'>
+
+            </br>
+            </br>
+            <input type='submit' value='submit' class='event_submit'>
+        </div>
+    <% end %>
 <% end %>
-</table>
 
+<div id = "listevents"></div>
 <br />
 
 <%= link_to 'New Event', new_event_path %>

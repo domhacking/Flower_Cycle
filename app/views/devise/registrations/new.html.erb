@@ -2,6 +2,12 @@
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
+  <div class ="newuser">
+    <div class="field">
+      <%= f.label :role %><br />
+      <%= f.text_field :role %>
+    </div>
+  </div>
 
   <div class="field">
     <%= f.label :name %><br />
@@ -26,10 +32,7 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
-  <div class="field">
-    <%= f.label :role %><br />
-    <%= f.text_field :role %>
-  </div>
+  
 
   <div class="field">
     <%= f.label :company_name %><br />

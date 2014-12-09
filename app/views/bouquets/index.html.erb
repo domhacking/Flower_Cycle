@@ -1,4 +1,4 @@
-<h1>Listing bouquets</h1>
+<h2>Listing bouquets</h2>
 <% if current_user.present? %>
   <% if current_user.role == "Admin" %>
     <div class = "new_bouquet_form">
@@ -7,9 +7,10 @@
       <p>Bouquet Description:</p>
       <input type='text' id='bouquet_description'>
       <p>Bouquet Price:</p>
-      <input type='text' id='price'>
+      <input type='integer' id='price'>
       <p>Number of Bouquets:</p>
-      <input type='text' id='number_bouquets'>
+      <input type='integer' id='number_bouquets'>
+      </br>
       </br>
       <input type='submit' value='submit' class='bouquet_submit'>
     </div>

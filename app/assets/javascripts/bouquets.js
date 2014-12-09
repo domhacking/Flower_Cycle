@@ -88,7 +88,6 @@ $(function(){
   $('.bouquet_submit').click(function(event){
     event.preventDefault()
     railsBouquet.bouquetForm()
-    console.log('hello')
   });
   event.preventDefault()
   railsBouquet.getBouquets();
