@@ -128,6 +128,7 @@ GEM
     ref (1.0.5)
     responders (1.1.2)
       railties (>= 3.2, < 4.2)
+    rmagick (2.13.3)
     sass (3.4.9)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -176,6 +177,7 @@ DEPENDENCIES
   pry-rails
   pry-stack_explorer
   rails (= 3.2.19)
+  rmagick
   sass-rails (~> 3.2.3)
   therubyracer
   twitter-bootstrap-rails

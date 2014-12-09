@@ -2,10 +2,11 @@
 
 <% @users.each do |user| %>
   <% if user.role == "Supplier" %>
-    <td><%= image_tag user.user_image.url %></td>
+    <td><%= link_to image_tag(user.user_image.thumb.url), user.user_image.detail.url %></td>
     <td><%= user.company_name %></td>
-    <td><%= user.website %></td>
+    <td></a><%= user.website %></td>
     <td><%= user.contact_number %></td>
   <% end %>
 <% end %>
 
+  
