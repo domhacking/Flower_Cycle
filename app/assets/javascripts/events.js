@@ -42,9 +42,10 @@ railsEvent.getEvents = function(){
     type: "GET",
     dataType:"json"
   }).success(function(data){
-
+    console.log(data)
     $.each(data, function(index, item){
-      console.log('hel')
+      console.log('hello tilda')
+  
       var listEvents = $("<ul>"+
         "<li>" + item.event_name+"</li>"+
         "<li>" + item.event_address_number+"</li>"+

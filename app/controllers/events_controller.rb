@@ -21,6 +21,7 @@ class EventsController < ApplicationController
   end
 
   def create
+    
     @event = current_user.events.new(params[:event])
     @event.save
     respond_with(@event)
