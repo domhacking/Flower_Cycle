@@ -26,6 +26,6 @@ user23 = User.create!(name: "Laura Zing", email: "lz@gmail.com", role:"Customer"
 user24 = User.create!(name: "Jacob Cummings", email: "jc@gmail.com", role:"Customer", password: "password1", house_number: "44" ,  road_name: "Victoria Road" , postcode: "W8 5RQ" , contact_number: "07500406744")
 user25 = User.create!(name: "Simon Orange", email: "sor@gmail.com",role:"Customer",  password: "password1", house_number: "44" , road_name:  "Victoria Road", postcode:  "W8 5RQ", contact_number:  "07500406744")
 user26 = User.create!(name: "Erik Jan", email: "ej@gmail.com", role:"Customer", password: "password1", house_number: "44" ,  road_name: "Victoria Road" , postcode: "W8 5RQ" , contact_number: "07500406744")
-user27 = User.create!(name: "Dominc Hacking", email: "dominichacking@gmail.com", role:"Customer", password: "password1", house_number: "44" ,  road_name: "Victoria Road" , postcode: "W8 5RQ" , contact_number: "07500406744")
+user27 = User.create!(name: "Dominc Hacking", email: "dominichacking@gmail.com", role:"Admin", password: "Vansanten1", house_number: "44" ,  road_name: "Victoria Road" , postcode: "W8 5RQ" , contact_number: "07500406744")
 
 
