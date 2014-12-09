@@ -1,7 +1,7 @@
 class EventsController < ApplicationController
   
   before_filter :set_event, only: [:show, :edit, :update, :destroy]
-  respond_to :html
+  respond_to :html, :json
 
   def index
     @events = Event.all
@@ -21,7 +21,7 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event = Event.new(params[:event])
+    @event = current_user.events.new(params[:event])
     @event.save
     respond_with(@event)
   end
