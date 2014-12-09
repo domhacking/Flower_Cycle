@@ -1,7 +1,11 @@
 <h3>Our flower suppliers</h3>
 
 <% @users.each do |user| %>
-<td><%= user.name %></td>
-<td><%= user.company_name %></td>
+  <% if user.role == "Supplier" %>
+    <td><%= image_tag user.user_image.url %></td>
+    <td><%= user.company_name %></td>
+    <td><%= user.website %></td>
+    <td><%= user.contact_number %></td>
+  <% end %>
 <% end %>
 

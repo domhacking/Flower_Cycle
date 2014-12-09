@@ -11,11 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(:version => 20141209133258) do
-=======
-ActiveRecord::Schema.define(:version => 20141209150123) do
->>>>>>> card-12
+ActiveRecord::Schema.define(:version => 20141209182417) do
 
   create_table "bouquet_purchases", :force => true do |t|
     t.integer  "quantity"
@@ -85,6 +81,7 @@ ActiveRecord::Schema.define(:version => 20141209150123) do
     t.string   "website"
     t.string   "contact_number"
     t.string   "name"
+    t.string   "user_image"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

@@ -3,7 +3,6 @@ class Bouquet < ActiveRecord::Base
 
 belongs_to :event
 belongs_to :purchase
-belongs_to :user, through: :event
 end
 
 # has_many :order_products
