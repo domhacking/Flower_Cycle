@@ -11,7 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20141209133258) do
+=======
+ActiveRecord::Schema.define(:version => 20141209150123) do
+>>>>>>> card-12
 
   create_table "bouquet_purchases", :force => true do |t|
     t.integer  "quantity"
@@ -23,7 +27,7 @@ ActiveRecord::Schema.define(:version => 20141209133258) do
 
   create_table "bouquets", :force => true do |t|
     t.integer  "event_id"
-    t.integer  "price"
+    t.float    "price"
     t.integer  "number_bouquets"
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false
