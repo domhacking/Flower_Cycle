@@ -6,13 +6,15 @@ railsBouquet.bouquetForm = function(){
   var bouquetDescription = $('#bouquet_description').val();
   var price = $('#price').val();
   var numberBouquets = $('#number_bouquets').val();
+  var website = $('#website').val;
 
   // fill up the object to send to Rails
   var bouquet = {
     bouquet_name: bouquetName,
     bouquet_description: bouquetDescription,
     price: price,
-    number_bouquets: numberBouquets
+    number_bouquets: numberBouquets,
+    website: website
   }  
   
   $.ajax({
@@ -42,7 +44,7 @@ railsBouquet.getBouquets = function(){
         "<p>" + item.bouquet_name + "</p>"+
         "<p>" + item.price+"</p>"+
         "<p>" + item.bouquet_description +"</p>"+
-        "<p><a href=''>" + item.website +"</a></p>"+
+        "<p>" + item.website +"</a></p>"+
         "<td><button data-id='" + item.id+"' class='btn edit_post'>Edit</button> <button data-id='" + item.id+"' class='btn btn-danger delete_post'>Delete</button></td>"+
         "</tr>");
 

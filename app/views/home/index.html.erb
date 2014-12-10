@@ -54,10 +54,14 @@
   <h3><%= link_to 'Our Suppliers', users_path %></h3>
     <div class = "suppliers">
        <% @random_supplier.each do |supplier| %>
-       <%= image_tag supplier.user_image %>
-       <%= supplier.company_name %>
-       <%= link_to supplier.website, "http://#{supplier.website}", target:"_blank"%>
-       <%= supplier.email %>
+       <div class = "homepagesupplier">
+         <%= image_tag supplier.user_image %><br>
+         <div class = 'flower_company_name'>
+          <%= supplier.company_name %><br>
+         </div>
+         <%= link_to supplier.website, "http://#{supplier.website}", target:"_blank"%><br>
+         <%= supplier.email %>
+       </div>
        <% end %>
     </div>
 </div>

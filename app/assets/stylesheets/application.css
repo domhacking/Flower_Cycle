@@ -56,6 +56,7 @@ body, nav{
 }
 
 .process{
+  margin-left: 40px;
   margin-top: 50px;
   height: 600px;
   width: 100%;
@@ -97,12 +98,39 @@ body, nav{
 }
 
 .suppliers_container{
+
+  margin: 0 auto;
   margin-top: 50px;
+  margin-left: 40px;
   height: 600px;
   width: 100%;
 }
 
+.suppliers{
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.homepagesupplier{
+  margin: 0 auto;
+  vertical-align: top;
+  display: inline-block;
+  border: 2px solid black;
+  width: 28%;
+  height: 400px;
+}
+.homepagesupplier img{
+
+  padding-top: 50px;
+  margin-top: 15px;
+  margin: 0 auto;
+  display: block;
+}
+
 .instagram{
+  margin-left: 40px;
   margin-top: 50px;
   height: 600px;
   width: 100%;
