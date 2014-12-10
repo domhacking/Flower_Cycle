@@ -1,6 +1,8 @@
 FlowercycleApp::Application.routes.draw do
   resources :purchases
 
+  resources :charges
+
 
   resources :bouquets
 

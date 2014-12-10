@@ -9,7 +9,8 @@ gem 'pg'
 gem 'devise'
 gem 'carrierwave', '0.9.0'
 gem 'rmagick'
-gem "rails_12factor", group: :production
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+
 
 
 group :development, :test do
@@ -18,6 +19,8 @@ group :development, :test do
   gem 'pry-stack_explorer'
   gem 'binding_of_caller'
   gem 'better_errors'
+  gem 'rails_12factor'
+  gem 'letter_opener'
 end
 
 # Gems used only for assets and not required
