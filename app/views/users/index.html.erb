@@ -1,12 +1,16 @@
-<h3>Our flower suppliers</h3>
-
-<% @users.each do |user| %>
-  <% if user.role == "Supplier" %>
-    <td><%= link_to image_tag(user.user_image.thumb.url), user.user_image.detail.url %></td>
-    <td><%= user.company_name %></td>
-    <td></a><%= user.website %></td>
-    <td><%= user.contact_number %></td>
-  <% end %>
-<% end %>
-
+<div class = "suppliers_page">
+  <h3>Our flower suppliers</h3>
+  <div class = "supplier">
+    <% @users.each do |user| %>
+      <% if user.role == "Supplier" %>
+        <div class = "eachsupplier">
+          <td><%= link_to image_tag(user.user_image.thumb.url), user.user_image.detail.url %></td>
+          <td><%= user.company_name %></td>
+          <td></a><%= user.website %></td>
+          <td><%= user.contact_number %></td>
+          <% end %>
+        </div>
+    <% end %>
+  </div>
+</div>
   

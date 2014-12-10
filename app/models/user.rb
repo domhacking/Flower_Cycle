@@ -11,5 +11,12 @@ class User < ActiveRecord::Base
   has_many :events
 
   mount_uploader :user_image, UserImageUploader
-  
+
+  def random_user_homepage
+    @users.each do |user|
+      if user.role == "Supplier"
+        find(:all).sample(5)
+      end
+    end
+  end
 end

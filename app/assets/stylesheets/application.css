@@ -11,3 +11,143 @@
  *= require_self
  *= require_tree .
  */
+
+
+*, *:after, *:before { 
+  -moz-box-sizing: border-box; 
+  -ms-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
+
+/*html {
+  text-align: center;
+}
+*/
+body, nav{
+    min-width: 1200px;
+}
+
+.order {
+  margin-top: 80px;
+  height: 600px;
+  width: 100%;
+  background-color: #16ff2a;
+}
+
+.order h1{
+  padding-top: 170px;
+  font-size: 50px;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.flowerandtext{
+  margin-top: 170px;
+  float: right;
+  text-align: center;
+  margin-right: 200px;
+}
+
+.flowerandtext p{
+  width: 250px;
+}
+
+.process{
+  margin-top: 50px;
+  height: 600px;
+  width: 100%;
+}
+
+.image{
+  width: 100px;
+  height: 100px;
+}
+
+.digit{
+  padding: 12px;
+  width: 50px;
+  height: 50px;
+  border: 2px black solid;
+  border-radius: 50%;
+
+}
+.steps{
+  margin-top: 10%;
+  text-align: center;
+}
+.step1{
+  width: 200px;
+  display: inline-block;
+}
+
+.step2{
+  width: 200px;
+  display: inline-block;
+}
+.step3{
+  width: 200px;
+  display: inline-block;
+}
+.step4{
+  width: 200px;
+  display: inline-block;
+}
+
+.suppliers_container{
+  margin-top: 50px;
+  height: 600px;
+  width: 100%;
+}
+
+.instagram{
+  margin-top: 50px;
+  height: 600px;
+  width: 100%;
+}
+
+footer {
+  background-color: #318b18;
+}
+
+.social{
+  display: inline-block;
+  float: right;
+  margin-top: 85px;
+  margin-right: 15px;    
+}
+.contact{
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 300px;
+}
+
+.suppliers_page{
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.supplier{
+  margin: 0 auto;
+  width: 90%
+}
+.eachsupplier{
+  margin: 0 auto;
+  width: 25%;
+  height: 300px;
+  border: 2px solid black;
+  display: inline-block;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
