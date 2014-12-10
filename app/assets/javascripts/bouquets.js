@@ -38,7 +38,7 @@ railsBouquet.getBouquets = function(){
     
     $.each(data, function(index, item){
       var listBouquets = $("<ul>"+
-        "<p>" + item.bouquet_image+"</p>"+
+        "<img src='/assets/" + item.bouquet_image+"''>"+
         "<p>" + item.bouquet_name+"</p>"+
         "<p>" + item.price+"</p>"+
         "<p>" + item.bouquet_description +"</p>"+

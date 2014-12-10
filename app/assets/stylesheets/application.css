@@ -136,6 +136,7 @@ footer {
   width: 90%
 }
 .eachsupplier{
+  vertical-align: top;
   margin: 0 auto;
   width: 25%;
   height: 300px;
