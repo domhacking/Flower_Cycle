@@ -44,9 +44,9 @@ railsBouquet.getBouquets = function(){
         "<p class = 'bouquet_name'>" + item.bouquet_name + "</p>"+
         "<p class = 'price'>" + "£" + item.price+"</p>"+
         "<p class = 'bouquet_description'>" + item.bouquet_description +"</p>"+
-        "<p>" + item.website +"</a></p>"+
+        "<p>" + item.website +"</a></p>" +
         "<td><button data-id='" + item.id+"' class='btn edit_post'>Edit</button> <button data-id='" + item.id+"' class='btn btn-danger delete_post'>Delete</button></td>"+
-        "</tr>");
+        "</tr>" + "</ul>");
 
       listBouquets.appendTo("#listbouquets")
     });

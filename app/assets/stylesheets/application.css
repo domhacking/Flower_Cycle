@@ -177,6 +177,25 @@ footer {
   padding: 10px;
 }
 
+
+/*Bouquet Order Page*/
+
+.subscription {
+  margin-top: 80px;
+}
+
+.subscription h2 {
+  margin-top: 80px;
+  margin-left: 40px
+}
+
+.subscription_order p{
+  margin-top: 30px;
+  margin-left: 200px;
+  font-size: 20px;
+}
+
+
 .listing_bouquets{
   margin-top: 80px;
 }
@@ -187,13 +206,16 @@ footer {
 
 #listbouquets {
   margin-top: 70px;
-  width: 50%;
+  width: 300px;
   margin: 0 auto;
+}
 
+.listbouquets{
+  margin-top: 40px;
+  text-align: center;
 }
 
 .bouquet_image{
-  text-align: center;
   margin: 0 auto;
   width: 200px;
   height: 200px;
@@ -204,7 +226,6 @@ footer {
 
 .bouquet_name{
   font-size: 20px;
-  text-align: center;
   width: 300px;
   margin: 0 auto;
   padding-top: 10px;
@@ -214,17 +235,15 @@ footer {
 
 .price{
   width: 40px;
-  font-weight: bold;
   margin: 0 auto;
+  font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .bouquet_description{
-  text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-
 }
 
 

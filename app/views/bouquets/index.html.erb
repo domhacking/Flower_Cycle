@@ -1,5 +1,15 @@
+
+<div class = 'subscription'>
+  <h2>Subscribe</h2>
+  <div class = 'subscription_order'>
+    <p>Get an amazing, unique and different bouquet delivered to your door for every week. <br> <br> At £20 a week you can subscribe to Flower Cycle</p>
+  </div>
+</div>
+
+
+ 
 <div class = "listing_bouquets">
-  <h2>Listing bouquets</h2>
+  <h2>This Weeks Bouquets</h2>
   <% if current_user.present? %>
     <% if current_user.role == "Admin" %>
       <div class = "new_bouquet_form">
@@ -23,11 +33,7 @@
   <% end %>
 </div>
 
-<div class = 'subscription'>
 
-
-
-</div>
 
 
 <div id = "listbouquets"></div>

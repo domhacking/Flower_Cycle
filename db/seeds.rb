@@ -34,9 +34,9 @@ user27 = User.create!(name: "Dominc Hacking", email: "dominichacking@gmail.com",
 
 
 
-bouquet1 = Bouquet.create!(bouquet_name: "Winterary & Wild", bouquet_description:"This bouquet of flowers were plucked from a lovely winter themed wedding between a young and lovely couple called Alex & Amy", price: 20.00, number_bouquets:"30", bouquet_image: "amywedding.jpg", website: "www.petalon.co.uk")
-bouquet2 = Bouquet.create!(bouquet_name: "Homely Hydrangeas", bouquet_description:"Beautiful white Hydrangeas, in full bloom, to warm up your home on a cold day", price: 25.00, number_bouquets:"20", bouquet_image: "homelyhydrangeas.jpg", website: "www.petalon.co.uk")
-bouquet3 = Bouquet.create!(bouquet_name: "Romantic Roses", bouquet_description:"Let the smell of roses drift through your home with this georgo", price: 15.00, number_bouquets:"30", bouquet_image: "romanticroses.jpg", website: "www.petalon.co.uk")
+bouquet1 = Bouquet.create!(bouquet_name: "Winterary & Wild", bouquet_description:"This bouquet of flowers were plucked from a lovely winter themed wedding between a young and lovely couple called Alex & Amy", price: 20.00, number_bouquets:"30", bouquet_image: "amywedding.jpg")
+bouquet2 = Bouquet.create!(bouquet_name: "Homely Hydrangeas", bouquet_description:"Beautiful white Hydrangeas, in full bloom, to warm up your home on a cold day", price: 25.00, number_bouquets:"20", bouquet_image: "homelyhydrangeas.jpg")
+bouquet3 = Bouquet.create!(bouquet_name: "Romantic Roses", bouquet_description:"Let the smell of roses drift through your home with this georgo", price: 15.00, number_bouquets:"30", bouquet_image: "romanticroses.jpg")
 
 
 
