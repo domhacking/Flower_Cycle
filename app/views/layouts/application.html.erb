@@ -6,13 +6,19 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <script type="text/javascript">
+  // This identifies your website in the createToken call below
+  Stripe.setPublishableKey('STRIPE_PUBLISHABLE_KEY');
+  // ...
+</script>
 </head>
 <body>
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="http://localhost:3000">
-        <img alt="Brand" src="/assets/images/flowercyclelogo.jpeg">
+        <a class="navbar-brand" href="https://peaceful-retreat-3223.herokuapp.com/">
+        <img alt="Brand" src="/assets/flowercyclelogo.jpeg">
         </a>
         <ul class="nav nav pills nav pull-right">
           <li><%= link_to 'How it works'%></li>
