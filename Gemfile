@@ -9,6 +9,8 @@ gem 'pg'
 gem 'devise'
 gem 'carrierwave', '0.9.0'
 gem 'rmagick'
+gem "rails_12factor", group: :production
+
 
 group :development, :test do
   gem 'pry-rails'
