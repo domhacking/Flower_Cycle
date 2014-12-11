@@ -1,18 +1,13 @@
-$(function(){
-  $('.newuser').on('change', function(){
-    event.preventDefault();
-    console.log('hello')
-  })
-})
-
-
-
-// railsAjax = {};
-// railsAjax.fields = ["title", "description", "author", "twitter", "pusplished_at"]
-
-// railsAjax.togglePages = function(showPage){
-//   var hidePage = (showPage === "#new_post") ? '#all_posts' : '#new_post';
-//   $(hidePage).slideUp(function(){
-//     $(showPage).slideDown();
-//   });
-// }
+$(document).ready(function(){
+        $("select").change(function(){
+            $( "select option:selected").each(function(){
+                if($(this).attr("value")=="Customer"){
+                    $(".supplierinfo").hide();
+                    
+                }
+                if($(this).attr("value")=="Supplier"){
+                    $(".supplierinfo").show();
+                }  
+            });
+        }).change();
+    });

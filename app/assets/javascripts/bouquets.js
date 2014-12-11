@@ -39,19 +39,22 @@ railsBouquet.getBouquets = function(){
   }).success(function(data){
     
     $.each(data, function(index, item){
+ 
       var listBouquets = $("<ul class = 'listbouquets'>"+
         "<img class = 'bouquet_image' src='/assets/" + item.bouquet_image + "'>"+
         "<p class = 'bouquet_name'>" + item.bouquet_name + "</p>"+
         "<p class = 'price'>" + "£" + item.price+"</p>"+
         "<p class = 'bouquet_description'>" + item.bouquet_description +"</p>"+
         "<p>" + item.website +"</a></p>" +
-        "<td><button data-id='" + item.id+"' class='btn edit_post'>Edit</button> <button data-id='" + item.id+"' class='btn btn-danger delete_post'>Delete</button></td>"+
-        "</tr>" + "</ul>");
+        "<td><button data-id='" + item.id+"' class='btn edit_post'>Edit</button> <button data-id='" + item.id+"' class='btn btn-danger delete_post'>Delete</button></td>" + "<form action='/charges' method='post'> <script src='https://checkout.stripe.com/checkout.js' class='stripe-button' data-key='pk_test_97wILwGp7Sbroy6sUrVrPLXK' data-description='A flower purchase' data-amount=" + item.price * 100 + " data-currency='gbp'></script></form>" + "</tr>" + "</ul>");
+
 
       listBouquets.appendTo("#listbouquets")
     });
   });
-}    
+} 
+      
+   
 
 railsBouquet.deleteBouquet = function(){
 
@@ -98,4 +101,27 @@ $(function(){
   $('#listbouquets').on('click', '.edit_post', railsBouquet.editBouquet); 
 })
 
+
+// var handler = StripeCheckout.configure({
+//   key: 'pk_live_tD80PqeutCcWZZ6EPaPJLK7O',
+//   image: '/alexflowercyclelogo.png',
+//   token: function(token) {
+//     // You can access the token ID with `token.id`
+//   }
+// });
+
+// $('.customButton').on('click', function(e) {
+//   // Open Checkout with further options
+//   handler.open({
+//     name: 'Demo Site',
+//     description: '2 widgets (£20.00)',
+//     amount: 2000
+//   });
+//   e.preventDefault();
+// });
+
+// Close Checkout on page navigation
+// $(window).on('popstate', function() {
+//   handler.close();
+// });
 
