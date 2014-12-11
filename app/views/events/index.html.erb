@@ -1,36 +1,39 @@
-<h1>Listing events</h1>
-<% if current_user.present? %>
-    <% if current_user.role = "Admin" %>
-        <div class = "new_event_form">
-            <p>Event Name:</p>
-            <input type='text' id='event_name'>
+<div class = "backgroundform">
+    <h1>Listing events</h1>
+    <% if current_user.present? %>
+        <% if current_user.role = "Admin" %>
+            <div class = "new_event_form">
+                <p>Event Name:</p>
+                <input type='text' id='event_name'>
 
-            <p>Event Address Building Number:</p>
-            <input type='text' id='event_address_number'>
-        
-            <p>Event Street Name:</p>
-            <input type='text' id='event_street_name'>
-        
-            <p>Event Postcode:</p>
-            <input type='text' id='event_postcode'>
+                <p>Event Address Building Number:</p>
+                <input type='text' id='event_address_number'>
+            
+                <p>Event Street Name:</p>
+                <input type='text' id='event_street_name'>
+            
+                <p>Event Postcode:</p>
+                <input type='text' id='event_postcode'>
 
-            <p>Flower description</p>
-            <input type='text' id='flower_description'>
-        
-            <p>Quantity of Flowers:</p>
-            <input type='text' id='quantity_of_flowers'>
+                <p>Flower description</p>
+                <input type='text' id='flower_description'>
+            
+                <p>Quantity of Flowers:</p>
+                <input type='text' id='quantity_of_flowers'>
 
-            <p>Equipment needing to be returned:</p>
-            <input type='text' id='equipment_return'>
+                <p>Equipment needing to be returned:</p>
+                <input type='text' id='equipment_return'>
 
-            </br>
-            </br>
-            <input type='submit' value='submit' class='event_submit'>
-        </div>
+                </br>
+                </br>
+                <input type='submit' value='submit' class='event_submit'>
+            </div>
+        <% end %>
     <% end %>
-<% end %>
 
-<div id = "listevents"></div>
-<br />
+    <div id = "listevents"></div>
+    <br />
 
-<%= link_to 'New Event', new_event_path %>
+    <%= link_to 'New Event', new_event_path %>
+
+</div>

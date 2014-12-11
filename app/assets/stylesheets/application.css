@@ -31,7 +31,9 @@ body, nav{
   margin-top: 80px;
   height: 600px;
   width: 100%;
-  background-color: #16ff2a;
+  background: url('backgroundleaves.jpeg');
+
+  
 }
 
 .order h1{
@@ -42,6 +44,7 @@ body, nav{
   text-align: center;
   display: inline-block;
   margin-left: 50px;
+  color: white;
 }
 
 .flowerandtext{
@@ -52,14 +55,21 @@ body, nav{
 }
 
 .flowerandtext p{
-  width: 250px;
+  width: 350px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .process{
-  margin-left: 40px;
-  margin-top: 50px;
+  margin: 0px;
   height: 600px;
   width: 100%;
+}
+
+.process h3{
+  margin-left: 50px;
+
 }
 
 .image{
@@ -259,14 +269,19 @@ footer {
 /*Style forms*/
 
 .form{
+  padding-left: 20px;
   background-color: white;
-  padding-top: 80px;
+  padding-top: 20px;
   width: 300px;
-  margin: 0 auto 
+  margin: 0 auto;
+  border-radius: 10%;
+  line-height: middle;
 }
 
 .backgroundform{
-  background-image: url('yellowflowerbackground.jpeg');
+  margin-top: 80px;
+  background-image: url('yellowflowerbackground.jpeg'), url('purpleflowerbackground.jpeg');
+  min-height: 600px;
 }
 
 
