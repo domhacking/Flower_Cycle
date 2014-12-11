@@ -1,4 +1,6 @@
-<%= form_for(@event) do |f| %>
+<div class = "backgroundform">
+<div class ="form">
+  <%= form_for(@event) do |f| %>
   <% if @event.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
@@ -11,10 +13,7 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :user_id %><br />
-    <%= f.number_field :user_id %>
-  </div>
+
   <div class="field">
     <%= f.label :event_address_number %><br />
     <%= f.text_field :event_address_number %>
@@ -47,3 +46,6 @@
     <%= f.submit %>
   </div>
 <% end %>
+
+</div>
+</div>

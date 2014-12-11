@@ -54,14 +54,20 @@
   <h3><%= link_to 'Our Suppliers', users_path %></h3>
     <div class = "suppliers">
        <% @random_supplier.each do |supplier| %>
-       <%= image_tag supplier.user_image %>
-       <%= supplier.company_name %>
-       <%= link_to supplier.website, "http://#{supplier.website}", target:"_blank"%>
-       <%= supplier.email %>
+       <div class = "homepagesupplier">
+         <%= image_tag supplier.user_image %><br>
+         <div class = 'flower_company_name'>
+          <%= supplier.company_name %><br>
+         </div>
+         <%= link_to supplier.website, "http://#{supplier.website}", target:"_blank"%><br>
+         <%= supplier.email %>
+       </div>
        <% end %>
     </div>
 </div>
 
 <div class = "instagram">
     <h3><a href="http://instagram.com/flowercycle">Instagram</a></h3>
+
+    <iframe src="//embedagram.com/e/widget/1580154772/?css=/assets/stylesheets/application.css" scrolling="no" frameborder="0" style="border:none; width:404px; height:144px; overflow:hidden;" allowTransparency="true"></iframe>
 </div>

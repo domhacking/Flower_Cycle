@@ -6,13 +6,15 @@ railsBouquet.bouquetForm = function(){
   var bouquetDescription = $('#bouquet_description').val();
   var price = $('#price').val();
   var numberBouquets = $('#number_bouquets').val();
+  var website = $('#website').val;
 
   // fill up the object to send to Rails
   var bouquet = {
     bouquet_name: bouquetName,
     bouquet_description: bouquetDescription,
     price: price,
-    number_bouquets: numberBouquets
+    number_bouquets: numberBouquets,
+    website: website
   }  
   
   $.ajax({
@@ -37,14 +39,15 @@ railsBouquet.getBouquets = function(){
   }).success(function(data){
     
     $.each(data, function(index, item){
-      var listBouquets = $("<ul>"+
-        "<img src='/assets/" + item.bouquet_image+"''>"+
-        "<p>" + item.bouquet_name+"</p>"+
-        "<p>" + item.price+"</p>"+
-        "<p>" + item.bouquet_description +"</p>"+
-        "<p><a href=''>" + item.website +"</a></p>"+
-        "<td><button data-id='" + item.id+"' class='btn edit_post'>Edit</button> <button data-id='" + item.id+"' class='btn btn-danger delete_post'>Delete</button></td>"+ "<td><button id='customButton'>Purchase</button></td>" +
-        "</tr>");
+ 
+      var listBouquets = $("<ul class = 'listbouquets'>"+
+        "<img class = 'bouquet_image' src='/assets/" + item.bouquet_image + "'>"+
+        "<p class = 'bouquet_name'>" + item.bouquet_name + "</p>"+
+        "<p class = 'price'>" + "£" + item.price+"</p>"+
+        "<p class = 'bouquet_description'>" + item.bouquet_description +"</p>"+
+        "<p>" + item.website +"</a></p>" +
+        "<td><button data-id='" + item.id+"' class='btn edit_post'>Edit</button> <button data-id='" + item.id+"' class='btn btn-danger delete_post'>Delete</button></td>"+ "<td><button id='customButton'>Purchase</button></td>" + "</tr>" + "</ul>");
+
 
       listBouquets.appendTo("#listbouquets")
     });

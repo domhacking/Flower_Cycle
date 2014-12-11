@@ -56,6 +56,7 @@ body, nav{
 }
 
 .process{
+  margin-left: 40px;
   margin-top: 50px;
   height: 600px;
   width: 100%;
@@ -97,15 +98,46 @@ body, nav{
 }
 
 .suppliers_container{
+
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-left: 40px;
+  height: 600px;
+  width: 100%;
+}
+
+.suppliers{
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.homepagesupplier{
+  margin: 0 auto;
+  vertical-align: top;
+  display: inline-block;
+  border: 2px solid black;
+  width: 28%;
+  height: 400px;
+}
+.homepagesupplier img{
+
+  padding-top: 50px;
+  margin-top: 15px;
+  margin: 0 auto;
+  display: block;
+}
+
+.instagram{
+  margin-left: 40px;
   margin-top: 50px;
   height: 600px;
   width: 100%;
 }
 
-.instagram{
-  margin-top: 50px;
-  height: 600px;
-  width: 100%;
+iframe{
+  border : 3px red solid;
 }
 
 footer {
@@ -146,7 +178,96 @@ footer {
 }
 
 
+/*Bouquet Order Page*/
 
+.subscription {
+  margin-top: 80px;
+}
+
+.subscription h2 {
+  margin-top: 80px;
+  margin-left: 40px
+}
+
+.subscription_order p{
+  margin-top: 30px;
+  margin-left: 200px;
+  font-size: 20px;
+}
+
+
+.listing_bouquets{
+  margin-top: 80px;
+}
+
+.listing_bouquets h2{
+  margin-left: 40px;
+}
+
+#listbouquets {
+  margin-top: 70px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.listbouquets{
+  margin-top: 40px;
+  text-align: center;
+}
+
+.bouquet_image{
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  display: block;
+  border: 4px solid black;
+  border-radius: 50%
+}
+
+.bouquet_name{
+  font-size: 20px;
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.price{
+  width: 40px;
+  margin: 0 auto;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.bouquet_description{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*List new event*/
+
+.eventform {
+  margin-left: 40px;
+}
+.eventform h2{
+  margin-top: 80px;
+  margin-left: 40px;
+}
+
+/*Style forms*/
+
+.form{
+  background-color: white;
+  padding-top: 80px;
+  width: 300px;
+  margin: 0 auto 
+}
+
+.backgroundform{
+  background-image: url('yellowflowerbackground.jpeg');
+}
 
 
 
