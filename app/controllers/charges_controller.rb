@@ -18,6 +18,8 @@ class ChargesController < ApplicationController
       :currency    => 'gbp'
     )
 
+    # Purchase.create(user: current_user, amount: @amount, currency: charge.currency, bouquet_id: , )
+
   rescue Stripe::CardError => e
     flash[:error] = e.message
     redirect_to charges_path

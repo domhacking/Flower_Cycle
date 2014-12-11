@@ -43,7 +43,7 @@ railsBouquet.getBouquets = function(){
         "<p>" + item.price+"</p>"+
         "<p>" + item.bouquet_description +"</p>"+
         "<p><a href=''>" + item.website +"</a></p>"+
-        "<td><button data-id='" + item.id+"' class='btn edit_post'>Edit</button> <button data-id='" + item.id+"' class='btn btn-danger delete_post'>Delete</button></td>"+
+        "<td><button data-id='" + item.id+"' class='btn edit_post'>Edit</button> <button data-id='" + item.id+"' class='btn btn-danger delete_post'>Delete</button></td>"+ "<td><button id='customButton'>Purchase</button></td>" +
         "</tr>");
 
       listBouquets.appendTo("#listbouquets")
