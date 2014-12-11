@@ -62,9 +62,15 @@ body, nav{
   width: 100%;
 }
 
+.flowerandtext img{
+  border: 4px black solid;
+  border-radius: 50%;
+}
+
 .image{
   width: 100px;
   height: 100px;
+  
 }
 
 .digit{
