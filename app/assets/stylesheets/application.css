@@ -246,6 +246,15 @@ footer {
   padding-bottom: 10px;
 }
 
+/*List new event*/
+
+.eventform {
+  margin-left: 40px;
+}
+.eventform h2{
+  margin-top: 80px;
+  margin-left: 40px;
+}
 
 
 
