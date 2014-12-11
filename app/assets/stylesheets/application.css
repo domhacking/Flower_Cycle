@@ -256,6 +256,18 @@ footer {
   margin-left: 40px;
 }
 
+/*Style forms*/
+
+.form{
+  background-color: white;
+  padding-top: 80px;
+  width: 300px;
+  margin: 0 auto 
+}
+
+.backgroundform{
+  background-image: url('yellowflowerbackground.jpeg');
+}
 
 
 

@@ -1,6 +1,7 @@
 class EventsController < ApplicationController
   
   before_filter :set_event, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!
   respond_to :html, :json
 
   def index
