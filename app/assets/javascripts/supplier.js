@@ -71,7 +71,7 @@ railsUser.deleteUser = function(){
   $.ajax({
     url: '/users/' + userId,
     type: 'DELETE',
-    dataType: 'json',
+    dataType: 'json'
   }).success(function(data){
     $this.closest('ul').remove();
   });

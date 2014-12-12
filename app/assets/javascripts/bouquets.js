@@ -63,7 +63,7 @@ railsBouquet.deleteBouquet = function(){
   $.ajax({
     url: '/bouquets/' + bouquetId,
     type: 'DELETE',
-    dataType: 'json',
+    dataType: 'json'
   }).success(function(data){
     $this.closest('ul').remove();
   });

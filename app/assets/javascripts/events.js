@@ -71,7 +71,7 @@ railsEvent.deleteEvent = function(){
   $.ajax({
     url: '/events/' + eventId,
     type: 'DELETE',
-    dataType: 'json',
+    dataType: 'json'
   }).success(function(data){
     $this.closest('ul').remove();
   });
