@@ -45,7 +45,6 @@ railsBouquet.getBouquets = function(){
         "<p class = 'bouquet_name'>" + item.bouquet_name + "</p>"+
         "<p class = 'price'>" + "£" + item.price+"</p>"+
         "<p class = 'bouquet_description'>" + item.bouquet_description +"</p>"+
-        "<p>" + item.website +"</a></p>" +
         "<td><button data-id='" + item.id+"' class='btn edit_post'>Edit</button> <button data-id='" + item.id+"' class='btn btn-danger delete_post'>Delete</button></td>" + "<form action='/charges' method='post'> <script src='https://checkout.stripe.com/checkout.js' class='stripe-button' data-key='pk_test_97wILwGp7Sbroy6sUrVrPLXK' data-description='A flower purchase' data-amount=" + item.price * 100 + " data-currency='gbp'></script></form>" + "</tr>" + "</ul>");
 
 

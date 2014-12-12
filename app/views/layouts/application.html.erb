@@ -14,16 +14,16 @@
 </script>
 </head>
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <nav class="navbar navbar-fixed-top navbar-custom" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="https://peaceful-retreat-3223.herokuapp.com/">
-        <img alt="Brand" src="/assets/error/alexflowercyclelogo.png">
+        <a class="navbar-brand" href="http://localhost:3000">
+        <img alt="Brand" src="/assets/alexflowercyclelogo.png">
         </a>
         <ul class="nav nav pills nav pull-right">
-          <li><%= link_to 'How it works'%></li>
-          <li><%= link_to 'Our Flowers', bouquets_path %></li>
-          <li><%= link_to 'Supplier Stores', users_path %></li>
+          <li><a id="nav_one" href="#one">How it works</a></li>
+          <li><a id="nav_two" href="#two">Suppliers</a></li>
+          <li><a id="nav_three" href="#three">Contact Us</a></li>
           <li><%= link_to 'List Your Flowers', new_event_path %></li>
                     <li role="presentation" class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Sign In?<span class="caret"></span></a>
