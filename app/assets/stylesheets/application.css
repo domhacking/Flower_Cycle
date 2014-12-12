@@ -39,11 +39,10 @@ body, nav{
     height: 50px;
     text-decoration: none;
     color: white;
-    font-weight: bold;
 }
 
 .navbar .nav li a{
-  color: white;
+  color: white! important;
 
 }
 
@@ -134,7 +133,7 @@ body, nav{
 }
 
 .suppliers_container{
-  
+
   margin: 0 auto;
   margin-top: 50px;
   margin-left: 40px;
