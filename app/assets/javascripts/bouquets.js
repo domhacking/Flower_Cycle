@@ -99,28 +99,3 @@ $(function(){
   $('#listbouquets').on('click', '.delete_post', railsBouquet.deleteBouquet);
   $('#listbouquets').on('click', '.edit_post', railsBouquet.editBouquet); 
 })
-
-
-// var handler = StripeCheckout.configure({
-//   key: 'pk_live_tD80PqeutCcWZZ6EPaPJLK7O',
-//   image: '/alexflowercyclelogo.png',
-//   token: function(token) {
-//     // You can access the token ID with `token.id`
-//   }
-// });
-
-// $('.customButton').on('click', function(e) {
-//   // Open Checkout with further options
-//   handler.open({
-//     name: 'Demo Site',
-//     description: '2 widgets (£20.00)',
-//     amount: 2000
-//   });
-//   e.preventDefault();
-// });
-
-// Close Checkout on page navigation
-// $(window).on('popstate', function() {
-//   handler.close();
-// });
-
