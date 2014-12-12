@@ -3,11 +3,11 @@
   <div class = "flowerandtext">
     <%= image_tag('homepage1.jpeg')%>
     <p>Flower Cycle is a sustainable way to recieve beautiful flowers to your door on a regular basis</p>
-    <button><%= link_to 'Order', bouquets_path%></button>
+    <button class = "btn edit_post"><%= link_to 'Order', bouquets_path%></button>
   </div>
 </div>
 
-<div class = "process">
+<div class = "process" id = 'one'>
   <h3>How it works</h3>
   <div class = "steps">
     <div class = "step1">
@@ -47,10 +47,10 @@
       <p>Your home looks beautiful with a new set of flowers every week</p>
     </div>
   </div>
-  <%= link_to 'Find out more' %>
+  <h4><%= link_to 'Find out more' %></h4>
 </div>
 
-<div class = "suppliers_container">
+<div class = "suppliers_container" id="two">
   <h3><%= link_to 'Our Suppliers', users_path %></h3>
     <div class = "suppliers">
        <% @random_supplier.each do |supplier| %>
@@ -63,11 +63,15 @@
          <%= supplier.email %>
        </div>
        <% end %>
+
+
     </div>
+    <h4><%= link_to 'See more of our suppliers ->', users_path %></h4>
 </div>
 
-<div class = "instagram">
-    <h3><a href="http://instagram.com/flowercycle">Instagram</a></h3>
-
-    <iframe src="//embedagram.com/e/widget/1580154772/?css=/assets/stylesheets/application.css" scrolling="no" frameborder="0" style="border:none; width:404px; height:144px; overflow:hidden;" allowTransparency="true"></iframe>
+<div class = "instagram" id ='three'>
+  <h3><a href="http://instagram.com/flowercycle">Instagram</a></h3> 
+  <div class="imagereel">
+    <ul id="slideshow"></ul>
+  </div>
 </div>
